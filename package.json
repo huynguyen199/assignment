@@ -1,0 +1,30 @@
+{
+  "name": "assignment",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "env-cmd -f ./.env nodemon ./bin/www",
+    "lint": "npm run lint:js && npm run lint:ejs",
+    "lint:js": "eslint src --ignore-path src/templates",
+    "lint:ejs": "ejslint views/admin/pages/fo some-template.ejs"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "~2.6.1",
+    "ejs-lint": "^1.1.0",
+    "env-cmd": "^10.1.0",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "grunt-ejslint": "^1.0.0",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.3",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.7",
+    "syntax-error": "^1.4.0"
+  }
+}
